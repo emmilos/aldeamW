@@ -96,8 +96,67 @@
             </ul>
         </li>
 
-        <li class="nav-item {{ setMenuClass('admin.gestcredits.', 'menu-open') }}">
-            <a href="#" class="nav-link {{ setMenuClass('admin.gestcredits.', 'active') }}">
+        <li class="nav-item {{ setMenuClass('admin.Parametres.', 'menu-open') }}">
+            <a href="#" class="nav-link {{ setMenuClass('admin.Parametres.', 'active') }}">
+                <i class="nav-icon fas fa-cogs"></i>
+                <p>
+                Paramètres
+                <i class="right fas fa-angle-left"></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="{{ route('admin.Parametres.pays.index') }}"
+                       class="nav-link {{ setMenuActive('admin.Parametres.pays.index') }}">
+                    <i class="nav-icon fas fa-list-ul"></i>
+                    <p>Pays</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-list-ul"></i>
+                    <p>Localisation</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-sliders-h"></i>
+                    <p>Secteurs d'activités</p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-sliders-h"></i>
+                    <p>Type de marges</p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-sliders-h"></i>
+                    <p>Objets de crédits</p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-sliders-h"></i>
+                    <p>Type de pièces d'identité</p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-sliders-h"></i>
+                    <p>Mode de financements</p>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="nav-item {{ setMenuClass('admin.Financements.', 'menu-open') }}">
+            <a href="#" class="nav-link {{ setMenuClass('admin.Financements.', 'active') }}">
                 <i class="nav-icon fas fa-cogs"></i>
                 <p>
                 Gestion des credits
@@ -106,16 +165,16 @@
             </a>
             <ul class="nav nav-treeview">
                 <li class="nav-item">
-                    <a href="{{ route('admin.gestcredits.typecredit') }}"
-                        class="nav-link {{ setMenuActive('admin.gestcredits.typecredit') }}">
+                    <a href="{{ route('admin.Financements.credits.index') }}"
+                        class="nav-link {{ setMenuActive('admin.Financements.credits.index') }}">
                     <i class="nav-icon far fa-circle"></i>
                     <p>Mise en place credit</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="{{ route('admin.Financements.credits.index') }}" class="nav-link {{ setMenuActive('admin.Financements.credits.index') }}">
                     <i class="nav-icon fas fa-list-ul"></i>
-                    <p>Articles</p>
+                    <p>Credit</p>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -126,6 +185,7 @@
                 </li>
             </ul>
         </li>
+
 
         @endcan
 

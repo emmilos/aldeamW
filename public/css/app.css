@@ -18058,7 +18058,7 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
 }
 
 [class*="sidebar-dark-"] {
-  background-color: #343a40;
+  background-color: #03044eea;
 }
 
 [class*="sidebar-dark-"] .user-panel a:hover {
@@ -57035,6 +57035,7 @@ a.text-muted:hover {
 .dark-mode .dark-mode.accent-gray-dark .page-item .page-link:hover, .dark-mode .dark-mode.accent-gray-dark .page-item .page-link:focus {
   color: #3f474e;
 }
+
 
 .ellipsis{
     text-overflow:ellipsis;

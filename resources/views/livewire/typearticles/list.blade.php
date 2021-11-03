@@ -20,7 +20,7 @@
                 <table class="table table-head-fixed">
                   <thead>
                     <tr>
-                      <th style="width:50%;">Type d'article</th>
+                      <th style="width:50%;">Type d article</th>
                       <th style="width:20%;" class="text-center">Ajouté</th>
                       <th style="width:30%;" class="text-center">Action</th>
                     </tr>

@@ -11,7 +11,7 @@ class TypeCredit extends Model
 
 
 
-    public function Credit(){
+    public function Credits(){
         return $this->hasMany(Credit::class);
     }
 

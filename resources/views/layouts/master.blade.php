@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Starter</title>
+  <title>Aldeam V 2.0 </title>
 
     <link rel="stylesheet" href="{{mix("css/app.css")}}" />
 
@@ -19,10 +19,10 @@
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <aside class="main-sidebar sidebar-dark-secondary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
-      <span class="brand-text font-weight-bold" style="font-size: 1.3em;"><b>YBLTD</b></span>
+    <a href="#" class="brand-link">
+      <span class="brand-text font-weight-bold" style="font-size: 1.2em;"><b>Aldeam</b></span>
     </a>
 
     <!-- Sidebar -->

@@ -27,13 +27,26 @@
                   </thead>
                   <tbody>
 
+                    @foreach ($typecredits as $typecredit)
+                    <tr>
+                        <td>{{ $typecredit->id }}</td>
+                        <td class="text-center">{{ optional($typecredit->created_at)->diffForHumans() }}</td>
+                        <td class="text-center">
+                            <button class="btn btn-link" wire:click="editTypeArticle({{$typecredit->id}})"> <i class="far fa-edit"></i> </button>
+
+                             <button class="btn btn-link" wire:click="showProp({{$typecredit->id}})"> <i class="fa fa-list"></i> propriétés</button>
+
+
+                        </td>
+                    </tr>
+                @endforeach
                   </tbody>
                 </table>
               </div>
               <!-- /.card-body -->
               <div class="card-footer">
                 <div class="float-right">
-
+                    {{ $typecredits->links() }}
                 </div>
               </div>
             </div>

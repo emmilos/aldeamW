@@ -15,6 +15,7 @@ class CreateTypeCreditsTable extends Migration
     {
         Schema::create('type_credits', function (Blueprint $table) {
             $table->id();
+            $table->string("libel");
             $table->double("tx_marge_min");
 	        $table->double("tx_marge_max");
 	        $table->double("mnt_min");
