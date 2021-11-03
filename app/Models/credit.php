@@ -20,4 +20,8 @@ class credit extends Model
     public function ObjetCredit(){
         return $this->belongsTo(Objetscredit::class, "objets_credit_id", "id");
     }
+
+    public function typemarge(){
+        return $this->belongsTo(type_marge::class, "type_marges_id", "id");
+    }
 }

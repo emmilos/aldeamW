@@ -2,10 +2,14 @@
 
 namespace App\Http\Livewire;
 use Carbon\Carbon;
+use App\Models\Client;
 use App\Models\credit;
 use Livewire\Component;
+use App\Models\type_marge;
 use App\Models\TypeCredit;
+use App\Models\ObjetsCredit;
 use Livewire\WithPagination;
+use App\Models\BesoinFinancement;
 
 class CreditComp extends Component
 {
@@ -15,7 +19,11 @@ class CreditComp extends Component
     {
         return view('livewire.credits.index', [
             "credits" => credit::latest()->paginate(10),
-            "typecredits"=> TypeCredit::orderBy("libel", "ASC")->get()
+            "typecredits"=> TypeCredit::orderBy("libel", "ASC")->get(),
+            "Clients"=> Client::orderBy("id", "ASC")->get(),
+            "typemarges"=> type_marge::orderBy("libel", "ASC")->get(),
+            "besoinfinancements"=> BesoinFinancement::orderBy("libel", "ASC")->get(),
+            "ObjetsCredits"=> ObjetsCredit::orderBy("libel", "ASC")->get()
         ] )
            ->extends("layouts.master")
            ->section("contenu");
