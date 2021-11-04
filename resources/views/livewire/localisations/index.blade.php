@@ -1,16 +1,9 @@
 <div wire:ignore.self>
 
-    @if($currentPage == PAGECREATEFORM)
-         @include("livewire.localisations.add")
-    @endif
-
-    @if($currentPage == PAGEEDITFORM)
+        @include("livewire.localisations.add")
         @include("livewire.localisations.edit")
-    @endif
-
-    @if($currentPage == PAGELIST)
         @include("livewire.localisations.liste")
-    @endif
+
 
 </div>
 

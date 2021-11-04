@@ -14,6 +14,16 @@ class Client extends Model
     }
 
 
+    public function localisations(){
+        return $this->belongsTo(Localisation::class, "localisation_id", "id");
+
+    }
+
+    public function pays(){
+        return $this->belongsTo(pays::class, "pays_id", "id");
+
+    }
+
     public function Credit(){
         return $this->hasMany(credit::class);
     }

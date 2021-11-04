@@ -15,6 +15,7 @@ class CreateBesoinFinancementsTable extends Migration
     {
         Schema::create('besoin_financements', function (Blueprint $table) {
             $table->id();
+            $table->string("libelle");
             $table->timestamps();
         });
     }

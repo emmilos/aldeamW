@@ -22,8 +22,8 @@ class CreditComp extends Component
             "typecredits"=> TypeCredit::orderBy("libel", "ASC")->get(),
             "Clients"=> Client::orderBy("id", "ASC")->get(),
             "typemarges"=> type_marge::orderBy("libel", "ASC")->get(),
-            "besoinfinancements"=> BesoinFinancement::orderBy("libel", "ASC")->get(),
-            "ObjetsCredits"=> ObjetsCredit::orderBy("libel", "ASC")->get()
+            "besoinfinancements"=> BesoinFinancement::orderBy("libelle", "ASC")->get(),
+            "ObjetsCredits"=> ObjetsCredit::orderBy("libelle", "ASC")->get()
         ] )
            ->extends("layouts.master")
            ->section("contenu");
