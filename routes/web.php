@@ -7,6 +7,7 @@ use App\Models\TypeArticle;
 use  App\Http\Livewire\PaysComp;
 use App\Http\Livewire\CreditComp;
 use App\Http\Livewire\Utilisateurs;
+use App\Http\Livewire\TypeMargeComp;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Livewire\TypeCreditComp;
 use Illuminate\Support\Facades\Route;
@@ -64,7 +65,7 @@ Route::group([
         Route::get("/pays", PaysComp::class)->name("pays.index");
         Route::get("/besoinfinancement", BesoinfinanComp::class)->name("besoinfinancement.index");
         Route::get("/localisation", LocalisationComp::class)->name("localisations.index");
-        //Route::get("/pays", PaysComp::class)->name("pays.index");
+        Route::get("/typemarge", TypeMargeComp::class)->name("typemarges.index");
 
 
     });

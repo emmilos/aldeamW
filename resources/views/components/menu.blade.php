@@ -69,7 +69,7 @@
             <a href="#" class="nav-link {{ setMenuClass('admin.gestarticles.', 'active') }}">
                 <i class="nav-icon fas fa-cogs"></i>
                 <p>
-                Gestion articles
+                Gestion Clientèle
                 <i class="right fas fa-angle-left"></i>
                 </p>
             </a>
@@ -78,7 +78,7 @@
                     <a href="{{ route('admin.gestarticles.typearticles') }}"
                         class="nav-link {{ setMenuActive('admin.gestarticles.typearticles') }}">
                     <i class="nav-icon far fa-circle"></i>
-                    <p>Type darticles</p>
+                    <p>Liste des Clients</p>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -120,14 +120,16 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#"
+                    class="nav-link">
                     <i class="nav-icon fas fa-sliders-h"></i>
-                    <p>Secteurs d'activités</p>
+                    <p>Secteurs dactivités</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                <a href="{{ route('admin.Parametres.typemarges.index') }}"
+                    class="nav-link {{ setMenuActive('admin.Parametres.typemarges.index') }}">
                     <i class="nav-icon fas fa-sliders-h"></i>
                     <p>Type de marges</p>
                     </a>
