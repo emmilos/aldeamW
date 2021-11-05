@@ -28,4 +28,6 @@ class CreditComp extends Component
            ->extends("layouts.master")
            ->section("contenu");
     }
+
+
 }
