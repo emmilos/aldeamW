@@ -16,8 +16,8 @@ class CreatePaysTable extends Migration
         Schema::create('pays', function (Blueprint $table) {
             $table->id();
             $table->string("code_pays",3)->unique();
-	        $table->string("libel_pays");
-	        $table->string("libel_nationalite");
+	        $table->string("libel_pays")->nullable();
+	        $table->string("libel_nationalite")->nullable();
             $table->timestamps();
         });
     }
