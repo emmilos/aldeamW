@@ -24,6 +24,11 @@ class Client extends Model
 
     }
 
+    public function typepieceidents(){
+        return $this->belongsTo(type_piece-identites::class, "type_piece_identite_id", "id");
+
+    }
+
     public function Credit(){
         return $this->hasMany(credit::class);
     }
