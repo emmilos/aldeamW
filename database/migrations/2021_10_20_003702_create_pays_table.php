@@ -30,5 +30,6 @@ class CreatePaysTable extends Migration
     public function down()
     {
         Schema::dropIfExists('pays');
+        
     }
 }

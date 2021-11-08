@@ -74,7 +74,7 @@ class CreateCreditsTable extends Migration
             $table->double("cre_mnt_bloq")->nullable();
             $table->string("is_extended")->nullable();
             $table->string("interet_remb_anticipe")->nullable();
-            $table->foreignId("besoins_financement_id")->constrained()->nullable();
+            $table->foreignId("besoin_financement_id")->constrained()->nullable();
             $table->double("taux_marge")->nullable();
             $table->double("montant_marge")->nullable();
             $table->string("Benefice_estimatif")->nullable();
